@@ -35,3 +35,35 @@ body{
 #start:hover{
     background-color: #fa8c9e;
 }
+
+#factText{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 32px;
+    width: 60%;
+    text-align: center;
+}
+
+.nextFactBtn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fe6d6d;
+    color: white;
+    cursor: pointer;
+}
+.nextFactBtn:hover{
+    background-color: #fd9292;
+}
