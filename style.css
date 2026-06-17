@@ -1,4 +1,37 @@
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#welcomeCat{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+ #start{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    height: 80px;
+    width: 190px;
+    border-radius: 20px;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: #fa627b;
+    color: #fff;
+    cursor: pointer;
+}
+#start:hover{
+    background-color: #fa8c9e;
 }
