@@ -5,6 +5,8 @@ A simple and fun web application that fetches random cat facts from a public API
 The project demonstrates how to use **JavaScript Fetch API**, **Async/Await**, **DOM Manipulation**, **Event Handling**, and **Dynamic HTML Element Creation** to build an interactive web application.
 
 ---
+## Project Deployed Here
+https://randomcatfact101.netlify.app/
 
 ## 📸 Project Preview
 
