@@ -4,12 +4,15 @@ let welcomeDiv = document.querySelector(".container");
 
 startBtn.addEventListener("click", startFacts);
 
+//function to run when we click on start button, and start fetching random cat facts.
 function startFacts() {
   // console.log("cats");
   body.removeChild(welcomeDiv);
   getFacts();
 }
 
+//this function clears the body and dynamically create new elements and then display the random facts there.
+//the function is asyn because api calls may take time to get the response.
 async function getFacts() {
   let containerDiv = document.createElement("div");
   containerDiv.classList.add("container");
@@ -24,7 +27,7 @@ async function getFacts() {
 
   let fact = document.createElement("h3");
   fact.setAttribute("id", "factText");
-  fact.innerText = await factSearch();
+  fact.innerText = await factSearch();//without await the facts are not fetched sussecfully, and no facts are displayed.
 
   let nextBtn = document.createElement("button");
   nextBtn.classList.add("nextFactBtn");
@@ -35,6 +38,7 @@ async function getFacts() {
     fact.innerText = newFact;
   });
 
+  //all the dynamicly created elements are added to the body.
   containerDiv.appendChild(img);
   containerDiv.appendChild(fact);
   containerDiv.appendChild(nextBtn);
